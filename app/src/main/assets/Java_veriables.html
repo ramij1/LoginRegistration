@@ -1,0 +1,152 @@
+<h1 id="h1">Java Variables</h1>
+<p>A variable is a container which holds the value while the java program is executed. A variable is assigned with a datatype.</p>
+<p>Variable is a name of memory location. There are three types of variables in java: local, instance and static.</p>
+<p>There are two types of data types in java: primitive and non-primitive.</p>
+<hr />
+<h2 class="h2">Variable</h2>
+<p><strong>Variable</strong>&nbsp;is name of&nbsp;<em>reserved area allocated in memory</em>. In other words, it is a&nbsp;<em>name of memory location</em>. It is a combination of "vary + able" that means its value can be changed.</p>
+<h1><img src="https://static.javatpoint.com/core/images/variable.png" alt="variables in java" /></h1>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">int</span>&nbsp;data=<span class="number">50</span>;<span class="comment">//Here&nbsp;data&nbsp;is&nbsp;variable</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">Types of Variables</h3>
+<p>There are three types of variables in java:</p>
+<ul class="points">
+<li>local variable</li>
+<li>instance variable</li>
+<li>static variable</li>
+</ul>
+<h1><img src="https://static.javatpoint.com/core/images/types-of-variables1.png" alt="types of variables in java" /></h1>
+<h4 class="h4">1) Local Variable</h4>
+<p>A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.</p>
+<p>A local variable cannot be defined with "static" keyword.</p>
+<h4 class="h4">2) Instance Variable</h4>
+<p>A variable declared inside the class but outside the body of the method, is called instance variable. It is not declared as static.</p>
+<p>It is called instance variable because its value is instance specific and is not shared among instances.</p>
+<h4 class="h4">3) Static variable</h4>
+<p>A variable which is declared as static is called static variable. It cannot be local. You can create a single copy of static variable and share among all the instances of the class. Memory allocation for static variable happens only once when the class is loaded in the memory.</p>
+<h3 id="h3ex">Example to understand the types of variables in java</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">class</span>&nbsp;A{&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">int</span>&nbsp;data=<span class="number">50</span>;<span class="comment">//instance&nbsp;variable</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">static</span>&nbsp;<span class="keyword">int</span>&nbsp;m=<span class="number">100</span>;<span class="comment">//static&nbsp;variable</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">void</span>&nbsp;method(){&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">int</span>&nbsp;n=<span class="number">90</span>;<span class="comment">//local&nbsp;variable</span>&nbsp;&nbsp;</li>
+<li class="">}&nbsp;&nbsp;</li>
+<li class="alt">}<span class="comment">//end&nbsp;of&nbsp;class</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h2">Java Variable Example: Add Two Numbers</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">class</span>&nbsp;Simple{&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args){&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">int</span>&nbsp;a=<span class="number">10</span>;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">int</span>&nbsp;b=<span class="number">10</span>;&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">int</span>&nbsp;c=a+b;&nbsp;&nbsp;</li>
+<li class="">System.out.println(c);&nbsp;&nbsp;</li>
+<li class="alt">}}&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock3">
+<pre>20
+</pre>
+</div>
+<h3 class="h2">Java Variable Example: Widening</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">class</span>&nbsp;Simple{&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args){&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">int</span>&nbsp;a=<span class="number">10</span>;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">float</span>&nbsp;f=a;&nbsp;&nbsp;</li>
+<li class="alt">System.out.println(a);&nbsp;&nbsp;</li>
+<li class="">System.out.println(f);&nbsp;&nbsp;</li>
+<li class="alt">}}&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock3">
+<pre>10
+10.0
+</pre>
+</div>
+<h3 class="h2">Java Variable Example: Narrowing (Typecasting)</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">class</span>&nbsp;Simple{&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args){&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">float</span>&nbsp;f=<span class="number">10</span>.5f;&nbsp;&nbsp;</li>
+<li class=""><span class="comment">//int&nbsp;a=f;//Compile&nbsp;time&nbsp;error</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">int</span>&nbsp;a=(<span class="keyword">int</span>)f;&nbsp;&nbsp;</li>
+<li class="">System.out.println(f);&nbsp;&nbsp;</li>
+<li class="alt">System.out.println(a);&nbsp;&nbsp;</li>
+<li class="">}}&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock3">
+<pre>10.5
+10
+</pre>
+</div>
+<h3 class="h2">Java Variable Example: Overflow</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">class</span>&nbsp;Simple{&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args){&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">//Overflow</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">int</span>&nbsp;a=<span class="number">130</span>;&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">byte</span>&nbsp;b=(<span class="keyword">byte</span>)a;&nbsp;&nbsp;</li>
+<li class="">System.out.println(a);&nbsp;&nbsp;</li>
+<li class="alt">System.out.println(b);&nbsp;&nbsp;</li>
+<li class="">}}&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock3">
+<pre>130
+-126
+</pre>
+</div>
+<h3 class="h2">Java Variable Example: Adding Lower Type</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">class</span>&nbsp;Simple{&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args){&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">byte</span>&nbsp;a=<span class="number">10</span>;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">byte</span>&nbsp;b=<span class="number">10</span>;&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">//byte&nbsp;c=a+b;//Compile&nbsp;Time&nbsp;Error:&nbsp;because&nbsp;a+b=20&nbsp;will&nbsp;be&nbsp;int</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">byte</span>&nbsp;c=(<span class="keyword">byte</span>)(a+b);&nbsp;&nbsp;</li>
+<li class="alt">System.out.println(c);&nbsp;&nbsp;</li>
+<li class="">}}&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock3">
+<pre>20</pre>
+</div>

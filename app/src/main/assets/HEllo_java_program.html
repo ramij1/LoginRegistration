@@ -1,0 +1,180 @@
+<h1 class="h1">&nbsp; &nbsp; &nbsp; &nbsp; First Java Program | Hello World Example</h1>
+<p>In this page, we will learn how to write the simple program of java. We can write a simple hello java program easily after installing the JDK.</p>
+<p>To create a simple java program, you need to create a class that contains the main method. Let's understand the requirement first.</p>
+<h3 class="h3">The requirement for Java Hello World Example</h3>
+<table>
+<tbody>
+<tr>
+<td>For executing any java program, you need to
+<ul>
+<li>Install the JDK if you don't have installed it,&nbsp;<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">download the JDK</a>&nbsp;and install it.</li>
+<li>Set path of the jdk/bin directory.&nbsp;<a href="http://www.javatpoint.com/how-to-set-path-in-java" target="_blank" rel="noopener">http://www.javatpoint.com/how-to-set-path-in-java</a></li>
+<li>Create the java program</li>
+<li>Compile and run the java program</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 class="h3ex">Creating Hello World Example</h3>
+<p>Let's create the hello java program:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">class</span>&nbsp;Simple{&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String&nbsp;args[]){&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Hello&nbsp;Java"</span>);&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</li>
+<li class="alt">}&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h1 class="h1"><span class="testit"><a href="http://www.javatpoint.com/opr/test.jsp?filename=Simple" target="_blank" rel="noopener">Test it Now</a></span></h1>
+<p>save this file as Simple.java</p>
+<table>
+<tbody>
+<tr>
+<td><strong>To compile:</strong></td>
+<td>javac Simple.java</td>
+</tr>
+<tr>
+<td><strong>To execute:</strong></td>
+<td>java Simple</td>
+</tr>
+</tbody>
+</table>
+<div class="codeblock3">
+<pre><strong>Output:</strong>Hello Java
+</pre>
+</div>
+<p><strong>Compilation Flow:</strong></p>
+<p>When we compile Java program using javac tool, java compiler converts the source code into byte code.</p>
+<h1 class="h1"><img src="https://static.javatpoint.com/images/core/javacodecompile.png" alt="Java How to Compile" />&nbsp;<ins class="adsbygoogle cm_jtp_wtc_responsive" data-ad-client="ca-pub-4699858549023382" data-ad-slot="6746133113"></ins></h1>
+<h2 class="h2">Parameters used in First Java Program</h2>
+<p>Let's see what is the meaning of class, public, static, void, main, String[], System.out.println().</p>
+<p>&nbsp;</p>
+<ul class="points">
+<li><strong>class</strong>&nbsp;keyword is used to declare a class in java.</li>
+<li><strong>public</strong>&nbsp;keyword is an access modifier which represents visibility. It means it is visible to all.</li>
+<li><strong>static</strong>&nbsp;is a keyword. If we declare any method as static, it is known as the static method. The core advantage of the static method is that there is no need to create an object to invoke the static method. The main method is executed by the JVM, so it doesn't require to create an object to invoke the main method. So it saves memory.</li>
+<li><strong>void</strong>&nbsp;is the return type of the method. It means it doesn't return any value.</li>
+<li><strong>main</strong>&nbsp;represents the starting point of the program.</li>
+<li><strong>String[] args</strong>&nbsp;is used for command line argument. We will learn it later.</li>
+<li><strong>System.out.println()</strong>&nbsp;is used to print statement. Here, System is a class, out is the object of PrintStream class, println() is the method of PrintStream class. We will learn about the internal working of System.out.println statement later.</li>
+</ul>
+<div class="video-responsive"><iframe src="https://www.youtube.com/embed/FHsq2WSQymM" width="450" height="300" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></div>
+<hr />
+<p>To write the simple program, you need to open notepad by&nbsp;<strong>start menu -&gt; All Programs -&gt; Accessories -&gt; notepad</strong>&nbsp;and write a simple program as displayed below:</p>
+<h1 class="h1"><img src="https://static.javatpoint.com/images/simpleprogram.jpg" alt="The first program of java" /><br /><br /></h1>
+<table>
+<tbody>
+<tr>
+<td>As displayed in the above diagram, write the simple program of java in notepad and saved it as Simple.java. To compile and run this program, you need to open the command prompt by&nbsp;<strong>start menu -&gt; All Programs -&gt; Accessories -&gt; command prompt</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h1 class="h1"><br /><br /><img src="https://static.javatpoint.com/images/simpleprogram2.jpg" alt="how to compile and run a simple program of java" /><br /><br /><br /></h1>
+<table>
+<tbody>
+<tr>
+<td>To compile and run the above program, go to your current directory first; my current directory is c:\new. Write here:</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>To compile:</strong></td>
+<td>javac Simple.java</td>
+</tr>
+<tr>
+<td><strong>To execute:</strong></td>
+<td>java Simple</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 class="h2">How many ways can we write a Java program</h2>
+<p>There are many ways to write a Java program. The modifications that can be done in a Java program are given below:</p>
+<p><strong>1) By changing the sequence of the modifiers, method prototype is not changed in Java.</strong></p>
+<p>Let's see the simple code of the main method.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">static</span>&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String&nbsp;args[])&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>2) The subscript notation in Java array can be used after type, before the variable or after the variable.</strong></p>
+<p>Let's see the different codes to write the main method.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String&nbsp;[]args)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String&nbsp;args[])&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>3) You can provide var-args support to the main method by passing 3 ellipses (dots)</strong></p>
+<p>Let's see the simple code of using var-args in the main method. We will learn about var-args later in Java New Features chapter.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String...&nbsp;args)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>4) Having a semicolon at the end of class is optional in Java.</strong></p>
+<p>Let's see the simple code.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">class</span>&nbsp;A{&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">static</span>&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String...&nbsp;args){&nbsp;&nbsp;</li>
+<li class="alt">System.out.println(<span class="string">"hello&nbsp;java4"</span>);&nbsp;&nbsp;</li>
+<li class="">}&nbsp;&nbsp;</li>
+<li class="alt">};&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<hr />
+<h2 class="h2">Valid java main method signature</h2>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String&nbsp;[]args)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String&nbsp;args[])&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String...&nbsp;args)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">static</span>&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">final</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">final</span>&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">final</span>&nbsp;<span class="keyword">strictfp</span>&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<hr />
+<h2 class="h2">Invalid java main method signature</h2>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-j" start="1">
+<li class="alt"><span class="keyword">public</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">public</span>&nbsp;<span class="keyword">void</span>&nbsp;<span class="keyword">static</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">abstract</span>&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;main(String[]&nbsp;args)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<hr />
+<h3 class="h3">Resolving an error "javac is not recognized as an internal or external command"?</h3>
+<p>If there occurs a problem like displayed in the below figure, you need to set path. Since DOS doesn't know javac or java, we need to set path. The path is not required in such a case if you save your program inside the JDK/bin directory. However, it is an excellent approach to set the path. Click here for&nbsp;<a href="https://www.javatpoint.com/how-to-set-path-in-java">How to set path in java</a>.</p>
+<h1 class="h1"><img src="https://static.javatpoint.com/images/simpleprogram3.jpg" alt="how to resolve the problem of a hello world program in java" /></h1>

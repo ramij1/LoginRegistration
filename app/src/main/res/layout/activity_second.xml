@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:textColor="@color/Wlightorange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="210dp"
+            />
+
+        <TextView
+
+            android:textColor="@color/Wlightorangedark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghost App!"
+            android:textSize="60sp"
+            android:textStyle="italic"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+
+
+            />
+        <!--app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"-->
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="00dp"
+        android:background="@drawable/spaceullustration"
+        >
+
+        <Button
+            android:id="@+id/btnLetsgo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custome_button1"
+            android:text="     Let's go..       "
+            android:textAllCaps="false"
+            android:textColor="@color/Wlightorange" />
+
+    </LinearLayout>
+
+
+    <!--app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView"-->
+
+    <!--<ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" -->/>
+
+
+</LinearLayout>

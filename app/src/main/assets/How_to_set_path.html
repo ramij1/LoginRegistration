@@ -1,0 +1,113 @@
+<h1 class="h1">How to set path in Java</h1>
+<div id="upr">
+<ol>
+<li><a href="https://www.javatpoint.com/how-to-set-path-in-java#">How to set the path of JDK in Windows OS</a>
+<ol>
+<li><a href="https://www.javatpoint.com/how-to-set-path-in-java#pathtemporary">Setting Temporary Path of JDK</a></li>
+<li><a href="https://www.javatpoint.com/how-to-set-path-in-java#pathpermanent">Setting Permanent Path of JDK</a></li>
+</ol>
+</li>
+<li><a href="https://www.javatpoint.com/how-to-set-path-in-java#pathlinux">How to set the path of JDK in Linux OS</a></li>
+</ol>
+</div>
+<p>The path is required to be set for using tools such as javac, java, etc.</p>
+<p>If you are saving the Java source file inside the JDK/bin directory, the path is not required to be set because all the tools will be available in the current directory.</p>
+<p>However, if you have your Java file outside the JDK/bin folder, it is necessary to set the path of JDK.</p>
+<p>There are two ways to set the path in Java:</p>
+<ol class="points">
+<li>Temporary</li>
+<li>Permanent</li>
+</ol>
+<h2 class="h2">1) How to set the Temporary Path of JDK in Windows</h2>
+<p>To set the temporary path of JDK, you need to follow the following steps:</p>
+<ul>
+<li>Open the command prompt</li>
+<li>Copy the path of the JDK/bin directory</li>
+<li>Write in command prompt: set path=copied_path</li>
+</ul>
+<h3 class="h4">For Example:</h3>
+<div class="codeblock">
+<pre>set path=C:\Program Files\Java\jdk1.6.0_23\bin
+</pre>
+</div>
+<p>Let's see it in the figure given below:</p>
+<hr />
+<h1 class="h1"><img src="https://static.javatpoint.com/images/temporarypath.jpg" alt="How to set the path in Java" /></h1>
+<hr />
+<h2 class="h2">2) How to set Permanent Path of JDK in Windows</h2>
+<p>For setting the permanent path of JDK, you need to follow these steps:</p>
+<ul>
+<li>Go to MyComputer properties -&gt; advanced tab -&gt; environment variables -&gt; new tab of user variable -&gt; write path in variable name -&gt; write path of bin folder in variable value -&gt; ok -&gt; ok -&gt; ok</li>
+</ul>
+<h3 class="h3">For Example:</h3>
+<table>
+<tbody>
+<tr>
+<td class="green"><strong>1) Go to MyComputer properties</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path1.JPG" alt="how to set path in java" /></td>
+</tr>
+<tr>
+<td class="green"><strong>2) Click on the advanced tab</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path2.JPG" alt="how to set path in java" /></td>
+</tr>
+<tr>
+<td class="green"><strong>3) Click on environment variables</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path3.JPG" alt="how to set path in java " /></td>
+</tr>
+<tr>
+<td class="green"><strong>4) Click on the new tab of user variables</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path4.JPG" alt="how to set path in java" /></td>
+</tr>
+<tr>
+<td class="green"><strong>5) Write the path in the variable name</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path5.JPG" alt="how to set path in java" /></td>
+</tr>
+<tr>
+<td class="green"><strong>6) Copy the path of bin folder</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path6.JPG" alt="how to set path in java" /></td>
+</tr>
+<tr>
+<td class="green"><strong>7) Paste path of bin folder in the variable value</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path7.JPG" alt="how to set path in java" /></td>
+</tr>
+<tr>
+<td class="green"><strong>8) Click on ok button</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path8.JPG" alt="how to set path in java" /></td>
+</tr>
+<tr>
+<td class="green"><strong>9) Click on ok button</strong></td>
+</tr>
+<tr>
+<td><img src="https://static.javatpoint.com/images/path9.JPG" alt="how to set path in java" /></td>
+</tr>
+</tbody>
+</table>
+<p>Now your permanent path is set. You can now execute any program of java from any drive.</p>
+<hr />
+<h3 class="h2">Setting Java Path in Linux OS</h3>
+<p>Setting path in Linux OS is the same as setting the path in the Windows OS. But, here we use the export tool rather than set. Let's see how to set path in Linux OS:</p>
+<h1 class="h1">&nbsp;</h1>
+<div class="codeblock">
+<pre>export PATH=$PATH:/home/jdk1.6.01/bin/
+</pre>
+</div>
+<p>Here, we have installed the JDK in the home directory under Root (/home).</p>
+<div class="video-responsive"><iframe src="https://www.youtube.com/embed/rxKDcenUJhc" width="450" height="300" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></div>
+<p>You may also like:</p>
+<h1 class="h1"><a href="https://www.javatpoint.com/how-to-set-classpath-in-java">How to set classpath in Java</a></h1>
